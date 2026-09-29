@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <!-- FPS Monitor app icon. Regenerate resources/app.ico with: python tools/make_icon.py -->
+  <defs>
+    <linearGradient id="tile" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2c323d"/>
+      <stop offset="1" stop-color="#14171d"/>
+    </linearGradient>
+    <!-- Bar colors match the overlay labels: FPS green, CPU blue, GPU orange. -->
+    <linearGradient id="fps" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#b4f07f"/>
+      <stop offset="1" stop-color="#6cc23c"/>
+    </linearGradient>
+    <linearGradient id="cpu" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8fd2ff"/>
+      <stop offset="1" stop-color="#3f9ae6"/>
+    </linearGradient>
+    <linearGradient id="gpu" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffc07a"/>
+      <stop offset="1" stop-color="#f07f22"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Tile -->
+  <rect x="12" y="12" width="232" height="232" rx="52" fill="url(#tile)"/>
+  <rect x="13.5" y="13.5" width="229" height="229" rx="50.5" fill="none" stroke="#ffffff" stroke-opacity="0.10" stroke-width="3"/>
+
+  <!-- Baseline -->
+  <rect x="52" y="200" width="152" height="8" rx="4" fill="#ffffff" fill-opacity="0.18"/>
+
+  <!-- Bars -->
+  <rect x="52" y="64" width="40" height="128" rx="10" fill="url(#fps)"/>
+  <rect x="108" y="120" width="40" height="72" rx="10" fill="url(#cpu)"/>
+  <rect x="164" y="96" width="40" height="96" rx="10" fill="url(#gpu)"/>
+</svg>
